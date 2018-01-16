@@ -7,7 +7,8 @@ Blue Gray:	#3e4249
 */
 
 
-/* === GENERAL === */
+/* === GENERAL
+=============================================================*/
 
 body	{
 	margin-top: 50px;
@@ -16,7 +17,8 @@ body	{
 	background: url(../img/tile.jpg) top left repeat;
 }
 
- /* === GLOBAL === */
+ /* === GLOBAL
+=============================================================*/
 
 h1, h2, h3, h4, h5, h6 {
 	-webkit-font-smoothing: antialiased;
@@ -59,7 +61,8 @@ img	{
 	max-width: 100%;
 }
 
-/* === HERO === */
+/* === HERO
+=============================================================*/
 #hero {
 	background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
 	min-height: 500px;
@@ -142,6 +145,9 @@ section h3 {
 	margin: 30px 0 10px;
 }
 
+
+/*OPT IN SECTION
+=============================================================*/
 #optin {
 	background: #3e4249;
 	padding: 20px 0;
@@ -155,3 +161,34 @@ section h3 {
 	margin: 7px 0 0 0;
 }
 
+
+/*WHO BENEFITS
+=============================================================*/
+#who-benefits {
+	background: #fff
+}
+
+
+/*COURSE FEATURES
+=============================================================*/
+#course-features {
+	background: #3e4249;
+	color: #fff;
+	text-align: center;
+}
+
+/*=== CUSTOM ICON SPRITES
+=============================================================*/
+i.ci {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: url('../img/icon-sprite.png') no-repeat;
+}
+
+.ci.ci-computer 		{ background-position: 0 0; }
+.ci.ci-watch				{ background-position: -40px 0; }
+.ci.ci-calendar			{ background-position: -80px 0; }
+.ci.ci-community		{ background-position: -120px 0; }
+.ci.ci-instructor		{ background-position: -160px 0; }
+.ci.ci-device				{ background-position: -200px 0; }
