@@ -42,6 +42,23 @@ h4 {
 	font-size: 18px;
 }
 
+p {
+	margin: 0 0 15px;
+}
+
+p.lead {
+	font-weight: 400;
+}
+
+a:link, a:visited {
+	color: #dd5638;
+}
+
+a:hover {
+	text-decoration: none;
+	 color: #c9302c;
+}
+
 button, input, .btn, a.btn {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -52,13 +69,75 @@ button, input, .btn, a.btn {
 	font-weight: 700;
 }
 
+button.btn:focus {
+	outline: none !important;
+}
+
 .btn-danger {
 	background-color: #dd5638;
 	border-color: #d95131;
 }
 
+.btn-success {
+	background: #79b044;
+	border: none;
+}
+
+.btn-success:hover {
+	background: #6a9b3d;
+	border-color: #6a9b3d;
+}
+
 img	{
 	max-width: 100%;
+}
+
+.modal-content {
+	background: url('../img/tile.jpg') top left repeat;
+}
+
+.badge.social {
+	background: #ccc;
+	font-size: 24px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 42px;
+	margin: 0 5px 20px 0;
+	padding: 0;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	color: #fff;
+}
+
+.badge.social.twitter:hover {
+	background: #55acee;
+}
+
+.badge.social.facebook:hover {
+	background: #3b5998;
+}
+
+.badge.social.gplus:hover {
+	background: #db4b39;
+}
+
+blockquote {
+	padding: 0;
+	border: none;
+	font-style: italic;
+	text-align: left;
+}
+
+blockquote cite {
+	display: block;
+	color: #777;
+	margin: 15px 0 0 0;
+}
+
+blockquote:before {
+	display: none;
 }
 
 /* === HERO
@@ -128,7 +207,14 @@ img	{
 	display: block;
 }
 
-/* === LAYOUT === */
+
+
+/*Layout
+=============================================================*/
+.row + .row {
+	margin-top: 20px;
+}
+
 section {
 	padding: 80px 0;
 }
@@ -217,3 +303,142 @@ section h3 {
 #instructor {
 	background: #fff url('../img/brad-elvis.png') 90% -10px no-repeat;
 }
+
+#instructor h2 {
+	margin: 0 0 20px;
+}
+
+#instructor .num {
+	display: table;
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 24px;
+	height: 140px;
+	width: 140px;
+	text-align: center;
+	background: #dd5638;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	-webkit-font-smoother: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+#instructor .num .num-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#instructor .num span {
+	display: block;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+
+/*=== Testimonials
+=============================================================*/
+#kudos {
+	text-align: center;
+}
+
+.testimonial {
+	margin-bottom: 60px;
+}
+
+.testimonial img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+
+/*=== Sign Up
+=============================================================*/
+#signup {
+	text-align: center;
+	background: url('../img/hipster-stuff.jpg') center center repeat fixed;
+	background-size: cover;
+	color: #fff;
+	padding: 140px 0;
+}
+
+#signup h2 {
+	font-weight: 400;
+}
+
+#signup h2 strong {
+	border-bottom: solid 2px #dd5638;
+}
+
+#signup .btn {
+	font-size: 24px;
+}
+
+
+/*=== Footer
+=============================================================*/
+footer {
+	background: #3e4249;
+	color: #fff;
+	padding: 20px 0 10px;
+	font-size: 12px;
+}
+
+footer p {
+	 margin: 0;
+}
+
+footer a:link, footer a:visited {
+	color: #fff;
+}
+
+footer a:hover {
+	color: #dd5638;
+}
+
+footer li.signup-link a {
+	color: #dd5638;
+}
+
+footer li.signup-link a:hover {
+	font-weight: 700;
+}
+
+
+/*=== MEDIA QUERIES
+=============================================================*/
+@media screen and ( max-width: 991px ) {
+	#instructor .container {
+		background: rgba(255, 255, 255, 0.8);
+		padding: 20px;
+	}
+}
+
+@media screen and ( max-width: 768px ) {
+	.logo {
+		width: 50%;
+	}
+
+	#optin p {
+		margin: 0 0 10px;
+	}
+
+	#featurette iframe {
+		height: 240px;
+	}
+}
+
+
+@media screen and ( max-width: 568px ) {
+	#instructor .num {
+		height: 100px;
+		width: 100px;
+		font-size: 22px;
+	}
+
+	#instructor .num span {
+		font-size: 16px;
+	}
+}	
