@@ -177,18 +177,43 @@ section h3 {
 	text-align: center;
 }
 
-/*=== CUSTOM ICON SPRITES
+	/*=== CUSTOM ICON SPRITES
+	=============================================================*/
+	i.ci {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		background: url('../img/icon-sprite.png') no-repeat;
+	}
+
+	.ci.ci-computer 		{ background-position: 0 0; }
+	.ci.ci-watch				{ background-position: -40px 0; }
+	.ci.ci-calendar			{ background-position: -80px 0; }
+	.ci.ci-community		{ background-position: -120px 0; }
+	.ci.ci-instructor		{ background-position: -160px 0; }
+	.ci.ci-device				{ background-position: -200px 0; }
+
+
+/*=== FINAL PROJECT FEATURES
 =============================================================*/
-i.ci {
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background: url('../img/icon-sprite.png') no-repeat;
+#project-features {
+	background: #fff;
+	text-align: center;
 }
 
-.ci.ci-computer 		{ background-position: 0 0; }
-.ci.ci-watch				{ background-position: -40px 0; }
-.ci.ci-calendar			{ background-position: -80px 0; }
-.ci.ci-community		{ background-position: -120px 0; }
-.ci.ci-instructor		{ background-position: -160px 0; }
-.ci.ci-device				{ background-position: -200px 0; }
+
+/*=== FEATURETTE
+=============================================================*/
+#featurette {
+	background: url('../img/stuff-bg.jpg') 50% 100% repeat fixed;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+}
+
+
+/*=== INSTRUCTOR
+=============================================================*/
+#instructor {
+	background: #fff url('../img/brad-elvis.png') 90% -10px no-repeat;
+}
