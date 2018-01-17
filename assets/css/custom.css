@@ -219,6 +219,10 @@ section {
 	padding: 80px 0;
 }
 
+section.main-content {
+	padding: 40px 0;
+}
+
 .section-header {
 	text-align: center;
 }
@@ -573,6 +577,19 @@ footer li.signup-link a:hover {
 
 
 
+/*=== RESOURCES
+=============================================================*/
+.resource {
+	width: 31.33333333%;
+	float: left;
+	margin: 0 3% 40px 0;
+}
+
+.resource:nth-child(3n) {
+	margin-right: 0;
+}
+
+
 /*=== CUSTOM ICON SPRITES
 =============================================================*/
 i.ci {
@@ -622,6 +639,8 @@ textarea {
 
 /*=== MEDIA QUERIES
 =============================================================*/
+/*=== Small Desktop
+=============================================================*/
 @media screen and ( max-width: 991px ) {
 	#instructor .container {
 		background: rgba(255, 255, 255, 0.8);
@@ -629,6 +648,8 @@ textarea {
 	}
 }
 
+/*=== Mobile
+=============================================================*/
 @media screen and ( max-width: 768px ) {
 	.logo {
 		width: 50%;
@@ -641,9 +662,17 @@ textarea {
 	#featurette iframe {
 		height: 240px;
 	}
+
+	.resource {
+		width: 48%;
+		margin-right: 2%;
+		min-height: 800px;
+	}
 }
 
 
+/*=== Small Mobile
+=============================================================*/
 @media screen and ( max-width: 568px ) {
 	#instructor .num {
 		height: 100px;
@@ -653,5 +682,11 @@ textarea {
 
 	#instructor .num span {
 		font-size: 16px;
+	}
+
+	.resource {
+		width: 100%;
+		margin-right: 0;
+		min-height: 0;
 	}
 }	
